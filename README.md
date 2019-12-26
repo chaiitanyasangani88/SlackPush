@@ -29,7 +29,7 @@ except Exception as e:
     slackpush.send_exception(e)
 ```
 
-5. To send attachments to slack, you need to pass token. More details can be found [here](https://api.slack.com/tokens). 
+5. To send attachments to slack, you need to pass Slack OAuth token. More details can be found [here](https://api.slack.com/tokens). 
 
 **Note:** See that the token has relevant persmissions to post the attachement
 
