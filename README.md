@@ -22,6 +22,13 @@ To get started, clone the repository and run
 
 4. Similarly you can push specific exceptions as alerts to slack using `send_exception` method. This pushes the whole stack trace of the error to slack.
 
+```
+try:
+    < your code here>
+except Exception as e:
+    slackpush.send_exception(e)
+```
+
 5. To send attachments to slack, you need to pass token. More details can be found [here](https://api.slack.com/tokens). 
 
 **Note:** See that the token has relevant persmissions to post the attachement
