@@ -5,7 +5,7 @@ It also supports basic formating: Bold and Perforated.
 
 ## Installation
 To get started, clone the repository and run
-> pip install -r requirements.txt
+> pip install slackpush
 
 ## Usage
 1. Import the SlackPush object.

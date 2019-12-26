@@ -11,13 +11,14 @@ DESCRIPTION = 'Logging to Slack, made easy.'
 URL = 'https://github.com/chaiitanyasangani88/SlackPush/'
 EMAIL = 'chaitanyasangani88@gmail.com'
 AUTHOR = 'Chaitanya Sangani'
-REQUIRES_PYTHON = '>=3.6.0'
-VERSION = '0.1.0'
+REQUIRES_PYTHON = '>=3.5.0'
+VERSION = '0.1.1'
 
 REQUIRED = ['requests']
 EXTRAS = {}
 
 here = os.path.abspath(os.path.dirname(__file__))
+print(here)
 
 # Import the README and use it as the long-description.
 # Note: this will only work if 'README.md' is present in your MANIFEST.in file!
@@ -73,8 +74,6 @@ class UploadCommand(Command):
 
         sys.exit()
 
-
-# Where the magic happens:
 setup(
     name=NAME,
     version=about['__version__'],
@@ -85,6 +84,7 @@ setup(
     author_email=EMAIL,
     python_requires=REQUIRES_PYTHON,
     url=URL,
+    packages=find_packages(exclude=["tests", "*.tests", "*.tests.*", "tests.*"]),
     py_modules=[NAME],
     install_requires=REQUIRED,
     extras_require=EXTRAS,
