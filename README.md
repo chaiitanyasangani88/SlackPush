@@ -1,6 +1,6 @@
 # SlackPush - Logging to Slack made easy
 
-SlackPush provides a wrapper on requests to push messages, logs, exceptions and attachements to slack. 
+SlackPush provides a wrapper on requests to push messages, logs, exceptions and attachments to slack. 
 It also supports basic formating: Bold and Perforated. 
 
 ## Installation
