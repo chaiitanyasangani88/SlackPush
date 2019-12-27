@@ -1,11 +1,16 @@
-# SlackPush - Logging to Slack made easy
+# SlackPush - Logging to Slack, made easy
 
 SlackPush provides a wrapper on requests to push messages, logs, exceptions and attachments to slack. 
 It also supports basic formating: Bold and Perforated. 
 
 ## Installation
 To get started, clone the repository and run
+
+PYPI distribution
 > pip install slackpush
+
+Conda Distribution
+> conda install -c chaiitanyasangani88 slackpush
 
 ## Usage
 1. Import the SlackPush object.
